@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///C:/Users/Admin/Desktop/HTML/project.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness and Wellness</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Outdoor Adventure</h1>
+      <h2 class="try-it">Why Try It?</h2>
+      <img
+        src="./project_files/biking_tile_c082d9ff-86c5-4a83-a5cd-b5e362e54042.jpg"
+        alt="Biking"
+        target="_blank"
+      />
+      <p class="introduction">
+        Men, women, and children across all ages enjoy outdoor recreation given
+        the variety, accessibility, and the benefits associated with the
+        activities. Being in nature provides the participants with a sense of
+        connection and appreciation for the natural world. Besides, outdoor
+        activities can be adapted to different skill levels and abilities,
+        allowing people of all ages to participate and enjoy the activity..
+        <br />
+        <br />
+        <em
+          >The advantages of outdoor activities are endless and will help keep
+          you and your family physically and mentally healthy.</em
+        >
+      </p>
+      <h2>Outdoor Workout and Fitness</h2>
+      <p class="first-section">
+        Our outdoor workouts and fitness activities, which may be performed in
+        solitude or with several friends and family members, offer a wide range
+        of options for physical activity, such as hiking, running, cycling,
+        swimming, and more. The nature of activities we provide increases
+        motivation since being outdoors can provide a change of scenery and a
+        boost of motivation for working out, while the nature of the activities
+        may be more challenging in comparison to indoor workouts based on a
+        variety of terrain and weather conditions.
+      </p>
+      <p class="read-more">
+        <strong>Read more</strong>:
+        <a
+          href="https://www.livestrong.com/article/493323-physical-social-emotional-intellectual-benefits-of-outdoor-recreation/"
+          target="_blank"
+          class="information"
+        >
+          Benefits of Outdoor Recreation
+        </a>
+      </p>
+      <h2>What Activities do we Offer?</h2>
+      <ul>
+        <li>Hiking and camping</li>
+        <li>Hunting and fishing</li>
+        <li>Kayaking</li>
+        <li>Sailing and motorboating</li>
+        <li>Biking</li>
+        <li>Rock climbing</li>
+      </ul>
+      <button>Subscribe to Calendar</button>
+      <p class="footer">
+        <em>Coded by: <span class="coded-by">Brenda Omondi</span></em>
+      </p>
+      <hr />
+    </div>
+    <script>
+      function subscribeNow() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+
+        if (age >= 16) {
+          let emailAddress = prompt("What is your email address?");
+          alert(
+            "Hello " +
+              name +
+              "! Thank you for subscribing to our calendar. We will be in touch. 😎"
+          );
+        } else {
+          alert(
+            "Hello " +
+              name +
+              "! Thank you for your interest in our calendar. Unfortunately, you cannot subscribe. 😔"
+          );
+        }
+      }
+
+      let subscribeButton = document.querySelector("button");
+
+      subscribeButton.addEventListener("click", subscribeNow);
+    </script>
+  </body>
+</html>
